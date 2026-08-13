@@ -32,3 +32,30 @@ This repository contains my solutions for the **[roadmap.sh Linux Projects](http
    ```bash
    ./server-stats.sh
    ```
+
+### 2. Log Archive Tool
+
+- **Project Page:** [Log Archive Tool](https://roadmap.sh/projects/log-archive-tool)
+- **Directory:** `./Project 2-Log Archive Tool/`
+- **Script:** `log-archive.sh`
+- **Description:** A CLI tool written in Bash to archive logs from a given directory by compressing them into timestamped `.tar.gz` files and recording execution details in an archive log history.
+
+#### 🛠️ Quick Execution Guide
+
+1. Navigate to the project directory:
+
+   ```bash
+   cd "Project 2-Log Archive Tool"
+   ```
+
+2. Make the script executable:
+
+   ```bash
+   chmod +x log-archive.sh
+   ```
+
+3. Run the script with a target log directory:
+
+   ```bash
+   sudo ./log-archive.sh /var/log
+   ```
