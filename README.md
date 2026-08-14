@@ -8,7 +8,7 @@ This repository contains my solutions for the **[roadmap.sh Linux Projects](http
 
 ### 1. Server Performance Stats
 
-- **Project Page:** https://roadmap.sh/projects/server-stats
+- **Project Page:** [Server Performance Stats](https://roadmap.sh/projects/server-stats)
 - **Directory:** `./Project 1-Server Performance Stats/`
 - **Script:** `server-stats.sh`
 - **Description:** A lightweight Bash script designed to analyze and display essential Linux server performance metrics, including CPU utilization, memory usage, disk space, and top processes.
@@ -32,6 +32,8 @@ This repository contains my solutions for the **[roadmap.sh Linux Projects](http
    ```bash
    ./server-stats.sh
    ```
+
+---
 
 ### 2. Log Archive Tool
 
@@ -58,4 +60,33 @@ This repository contains my solutions for the **[roadmap.sh Linux Projects](http
 
    ```bash
    sudo ./log-archive.sh /var/log
+   ```
+
+---
+
+### 3. Nginx Log Analyser
+
+- **Project Page:** [Nginx Log Analyser](https://roadmap.sh/projects/nginx-log-analyser)
+- **Directory:** `./Project 3-Nginx Log Analyser/`
+- **Script:** `nginx-log-analyser.sh`
+- **Description:** A Bash script designed to analyze Nginx access logs and provide useful insights such as request statistics, frequently accessed URLs, and client information.
+
+#### 🛠️ Quick Execution Guide
+
+1. Navigate to the project directory:
+
+   ```bash
+   cd "Project 3-Nginx Log Analyser"
+   ```
+
+2. Make the script executable:
+
+   ```bash
+   chmod +x nginx-log-analyser.sh
+   ```
+
+3. Run the script against an access log file:
+
+   ```bash
+   ./nginx-log-analyser.sh nginx-access.log
    ```
