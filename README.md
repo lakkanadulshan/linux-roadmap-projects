@@ -90,3 +90,10 @@ This repository contains my solutions for the **[roadmap.sh Linux Projects](http
    ```bash
    ./nginx-log-analyser.sh nginx-access.log
    ```
+
+```markdown
+### 4. SSH Remote Server Setup
+
+- **Project Page:** https://roadmap.sh/projects/ssh-remote-server-setup
+- **Directory:** `./Project 4-SSH Remote Server Setup/`
+- **Description:** Configuration and setup guide for securing a Linux server with multiple SSH key
