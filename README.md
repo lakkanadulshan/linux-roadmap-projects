@@ -91,9 +91,41 @@ This repository contains my solutions for the **[roadmap.sh Linux Projects](http
    ./nginx-log-analyser.sh nginx-access.log
    ```
 
-```markdown
+---
+
 ### 4. SSH Remote Server Setup
 
-- **Project Page:** https://roadmap.sh/projects/ssh-remote-server-setup
+- **Project Page:** [SSH Remote Server Setup](https://roadmap.sh/projects/ssh-remote-server-setup)
 - **Directory:** `./Project 4-SSH Remote Server Setup/`
-- **Description:** Configuration and setup guide for securing a Linux server with multiple SSH key
+- **Description:** Configuration and setup guide for securing a Linux server with multiple SSH key pairs and SSH client aliases.
+
+#### 🛠️ Quick Execution Guide
+
+1. Navigate to the project directory:
+
+   ```bash
+   cd "Project 4-SSH Remote Server Setup"
+   ```
+
+2. Follow the SSH setup instructions in the project's `README.md`.
+
+3. Generate two SSH key pairs using the `ed25519` algorithm:
+
+   ```bash
+   ssh-keygen -t ed25519 -C "admin_key1" -f ~/.ssh/id_server_key1 -N ""
+   ssh-keygen -t ed25519 -C "admin_key2" -f ~/.ssh/id_server_key2 -N ""
+   ```
+
+4. Test the SSH connections using both keys:
+
+   ```bash
+   ssh -i ~/.ssh/id_server_key1 user@host
+   ssh -i ~/.ssh/id_server_key2 user@host
+   ```
+
+5. Connect using the configured SSH aliases:
+
+   ```bash
+   ssh server-key1
+   ssh server-key2
+   ```
